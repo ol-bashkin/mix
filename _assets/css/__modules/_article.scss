@@ -1,21 +1,25 @@
 .c-article {
   overflow-x: hidden;
+  min-width: $second-width;
   
   &--is-yoga {
     background-image: url(../img/_yoga/yoga_bg.jpg);
     background-position: -600px 0;
-    background-size: 1460px;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
 .article {
   box-sizing: border-box;
-  width: $main-width;
+  max-width: $main-width;
   margin: 0 auto;
   padding-left: 343px;
   &__wrapper {
     background-color: #fff;
     padding: 115px 166px 66px;
+    @media screen and (max-width: 1359px) {
+      padding: 115px 83px 66px;
+    }
   }
   
   &__lead {
@@ -50,6 +54,12 @@
   &__item {
     display: block;
     width: 161px;
+    margin-right: 13px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
     &:first-child {
       #{$s}__date, #{$s}__type, #{$s}__trainer {
         padding-left: 0;

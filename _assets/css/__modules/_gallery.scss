@@ -1,4 +1,5 @@
 .c-gallery {
+  box-sizing: border-box;
   background-color: #f3f3f3;
   padding: 100px 30px 60px;
   min-width: $second-width
@@ -6,7 +7,6 @@
 
 .gallery {
   max-width: $main-width;
-  min-width: $second-width;
   
   margin: 0 auto;
   
@@ -49,7 +49,7 @@
     display: block;
     width: 100%;
     max-width: 331px;
-    min-width: 230px;
+    min-width: 215px;
   }
 }
 

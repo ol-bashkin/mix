@@ -2,9 +2,10 @@
   box-sizing: border-box;
   width: 100%;
   padding: 0 30px;
+  min-width: $second-width;
   
   
-  &__wrapeer {
+  &__wrapper {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -15,19 +16,17 @@
     z-index: 1;
 
     max-width: $main-width;
-    min-width: $second-width;
+    
     
     height: 47px;
     margin: 0 auto;
     padding-top: 60px;
+    
+    &--is-black {
+      padding: 18px 0;
+      background-color: #000;
+    }
   }
-  
-  
-  &--is-black {
-    padding: 18px 0;
-    background-color: #000;
-  }
-  
   
   &__logo {
     flex-grow: 1;
