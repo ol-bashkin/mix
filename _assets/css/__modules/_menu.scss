@@ -1,17 +1,27 @@
 .menu {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
   
-  width: $main-width;
-  height: 47px;
-  margin: 0 auto;
-  padding-top: 60px;
+  
+  &__wrapeer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    max-width: $main-width;
+    min-width: $second-width;
+    
+    height: 47px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  
   
   &--is-black {
     padding: 18px 0;

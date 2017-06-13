@@ -1,7 +1,8 @@
 .caption {
   $c: &;
-  width: $main-width;
-  margin: 0 auto;
+  max-width: $main-width;
+  min-width: $second-width;
+  margin: 0 auto 20px;
   
   display: -webkit-flex;
   display: -moz-flex;
@@ -10,7 +11,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
   
   &--is-inside {
     width: 3840px;

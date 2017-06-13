@@ -1,12 +1,13 @@
 .c-gallery {
   background-color: #f3f3f3;
-  padding-top: 100px;
-  padding-bottom: 60px;
-  min-width: $main-width + 20;
+  padding: 100px 30px 60px;
+  min-width: $second-width
 }
 
 .gallery {
-  width: $main-width;
+  max-width: $main-width;
+  min-width: $second-width;
+  
   margin: 0 auto;
   
   display: -webkit-flex;
@@ -14,27 +15,46 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  flex-direction: column;
+
   
-  justify-content: space-between;
-  flex-wrap: wrap;
+  &__row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-bottom: 13px;
+  }
   
-  &__item {
-    width: 331px;
-    height: 331px;
+  &__link {
+    display: block;
     background-color: #000;
     box-shadow: 0 40px 20px -36px rgba(#000, 0.8);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     margin-bottom: 13px;
+    margin-right: 13px;
+    
     
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 55px 30px -50px rgba(#000, 0.5);
     }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 331px;
+    min-width: 230px;
   }
 }
 
 .seemore {
-  width: 1360px;
+  max-width: $main-width;
   margin: 28px auto 0;
   display: -webkit-flex;
   display: -moz-flex;

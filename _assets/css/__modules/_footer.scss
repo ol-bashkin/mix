@@ -1,7 +1,7 @@
 .c-footer {
   background-color: #242424;
-  padding: 60px 0 65px;
-  min-width: $main-width + 20;
+  padding: 60px 30px 65px;
+  min-width: $second-width;
   
   &--is-gray {
     background-color: #f4f4f6;
@@ -41,7 +41,7 @@
 }
 
 .footer {
-  width: $main-width;
+  max-width: $main-width;
   margin: 0 auto;
   
   display: -webkit-flex;
