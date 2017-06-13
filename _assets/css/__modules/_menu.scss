@@ -1,0 +1,119 @@
+.menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  
+  width: $main-width;
+  height: 47px;
+  margin: 0 auto;
+  padding-top: 60px;
+  
+  &--is-black {
+    padding: 18px 0;
+    background-color: #000;
+  }
+  
+  
+  &__logo {
+    flex-grow: 1;
+    width: 117px;
+    height: 47px;
+    background-image: url(../img/mix_logo.svg);
+    background-size: 117px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+  }
+  &__divider {
+    flex-grow: 1000;
+    height: 1px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 25px;
+  }
+
+  &__list {
+    $m: &;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    list-style-type: none;
+  }
+  
+  &__item {
+    box-sizing: border-box;
+    list-style-type: none;
+    font-size: 0;
+    margin: 0 5px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    @include raleway(12px, 500, 12px);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 17px 20px;
+    display: block;
+    
+    transition: background-color 0.3s ease-in-out;
+    
+    &:hover {
+      background-color: rgba(#fff, 0.2);
+    }
+    
+  }
+  &__language {
+    @include raleway(12px, 500, 12px);
+    color: rgba(#fff, 0.4);
+    text-align: center;
+    
+    display: block;
+    width: 47px;
+    padding: 17px 0;
+    
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease-in-out;
+    
+    &:hover {
+      background-color: rgba(#fff, 0.2);
+    }
+    
+    &--is-hidden {
+      visibility: hidden;
+      position: absolute;
+      color: rgba(#fff, 0);
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, visibility 0s linear 0.3s;
+      
+    }
+    
+    &--is-visible {
+      visibility: visible;
+      background-color: rgba(#fff, 0.2);
+      color: rgba(#fff, 0.4);
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, visibility 0s linear 0s;
+    }
+    
+
+  }
+  &__button {
+    @include button;
+  }
+}

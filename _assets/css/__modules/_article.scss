@@ -1,0 +1,112 @@
+.c-article {
+  overflow-x: hidden;
+  
+  &--is-yoga {
+    background-image: url(../img/_yoga/yoga_bg.jpg);
+    background-position: -600px 0;
+    background-size: 1460px;
+    background-repeat: no-repeat;
+  }
+}
+.article {
+  box-sizing: border-box;
+  width: $main-width;
+  margin: 0 auto;
+  padding-left: 343px;
+  &__wrapper {
+    background-color: #fff;
+    padding: 115px 166px 66px;
+  }
+  
+  &__lead {
+    @include raleway(20px, 400, 28px);
+    margin-bottom: 20px;
+  }
+  &__subhead {
+    @include raleway(16px, 600, 28px);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 50px 0 20px;
+  }
+  
+  &__text {
+    @include raleway(14px, 400, 28px);
+    color: rgba(#000, 0.7);
+    margin-bottom: 20px;
+  }
+}
+
+.shedule {
+  $s: &;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  
+  list-style-type: none;
+  
+  &__item {
+    display: block;
+    width: 161px;
+    &:first-child {
+      #{$s}__date, #{$s}__type, #{$s}__trainer {
+        padding-left: 0;
+        border-left: 0;
+      }
+    }
+  }
+  &__date {
+    @include raleway(16px, 500, 16px);
+    color: #000;
+    padding-left: 12px;
+    border-left: 1px solid rgba(#000, 0.2);
+    margin-bottom: 8px;
+  }
+  &__type {
+    @include raleway(14px, 400, 14px);
+    color: $gray-text;
+    padding-left: 12px;
+    margin-bottom: 12px;
+  }
+  &__trainer {
+    @include raleway(16px, 400, 16px);
+    color: #000;
+    padding-left: 12px;
+  }
+}
+
+.trainers {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  
+  list-style-type: none;
+  
+  &__item {
+    display: block;
+    margin-right: 12px;
+  }
+  &__name {
+    @include raleway(16px, 400, 16px);
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    display: block;
+    width: 204px;
+    height: 204px;
+    box-shadow: 0 35px 20px -36px rgba(#000, 0.8);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 13px;
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 49px 30px -50px rgba(#000, 0.5);
+    }
+  }
+}

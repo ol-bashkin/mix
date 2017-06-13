@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/RalewayLight.eot');
+  src: url('../fonts/RalewayLight.eot') format('embedded-opentype'),
+       url('../fonts/RalewayLight.woff2') format('woff2'),
+       url('../fonts/RalewayLight.woff') format('woff'),
+       url('../fonts/RalewayLight.ttf') format('truetype'),
+       url('../fonts/RalewayLight.svg#RalewayLight') format('svg');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/RalewayRegular.eot');
+  src: url('../fonts/RalewayRegular.eot') format('embedded-opentype'),
+       url('../fonts/RalewayRegular.woff2') format('woff2'),
+       url('../fonts/RalewayRegular.woff') format('woff'),
+       url('../fonts/RalewayRegular.ttf') format('truetype'),
+       url('../fonts/RalewayRegular.svg#RalewayRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/RalewayMedium.eot');
+  src: url('../fonts/RalewayMedium.eot') format('embedded-opentype'),
+       url('../fonts/RalewayMedium.woff2') format('woff2'),
+       url('../fonts/RalewayMedium.woff') format('woff'),
+       url('../fonts/RalewayMedium.ttf') format('truetype'),
+       url('../fonts/RalewayMedium.svg#RalewayMedium') format('svg');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../fonts/RalewayBold.eot');
+  src: url('../fonts/RalewayBold.eot') format('embedded-opentype'),
+       url('../fonts/RalewayBold.woff2') format('woff2'),
+       url('../fonts/RalewayBold.woff') format('woff'),
+       url('../fonts/RalewayBold.ttf') format('truetype'),
+       url('../fonts/RalewayBold.svg#RalewayBold') format('svg');
+}
+
+@mixin raleway($size, $weight, $line-height) {
+  font-family: "Raleway", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin button {
+  display: block;
+  box-sizing: border-box;
+  padding: 16px 24px;
+  border: 1px solid rgba($primary-color, 0.5);
+  
+  @include raleway(12px, 500, 12px);
+  color: $primary-color;
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+$primary-color: #e56b36;
+$text-white: rgba(255, 255, 255, 1);
+$gray-text: #818181;
+
+$main-width: 1360px;

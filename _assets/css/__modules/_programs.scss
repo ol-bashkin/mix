@@ -1,0 +1,92 @@
+.c-programs {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: $main-width + 20;
+  padding-top: 100px;
+  padding-bottom: 82px;
+}
+
+.programs {
+  width: $main-width;
+  margin: 0 auto;
+  list-style-type: none;
+  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  
+  &__item {
+    display: block;
+    
+    
+  }
+  
+  
+  &__link {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    box-sizing: border-box;
+    padding: 48px;
+    width: 331px;
+    height: 600px;
+    
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    text-decoration: none;
+    
+    box-shadow: 0 40px 20px -36px rgba(#000, 0.8);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 55px 30px -50px rgba(#000, 0.5);
+    }
+    
+    &--is{
+      &-fuse {
+        background-image: url(../img/_programs/fuse_bg.jpg);
+      }
+      &-trx {
+        background-image: url(../img/_programs/trx_bg.jpg);
+      }
+      &-barre {
+        background-image: url(../img/_programs/barre_bg.jpg);
+      }
+      &-yoga {
+        background-image: url(../img/_programs/yoga_bg.jpg);
+      }
+      
+    }
+  }
+  
+  
+  &__caption {
+    @include raleway(28px, 500, 28px);
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__text {
+    height: 96px;
+    @include raleway(16px, 400, 24px);
+    -webkit-font-smoothing: antialiased;
+    color: rgba(#fff, 0.4);
+    text-align: center;
+    
+  }
+}

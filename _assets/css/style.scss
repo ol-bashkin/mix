@@ -1,0 +1,23 @@
+@import '__modules/settings';
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+@import '__modules/header';
+@import '__modules/menu';
+@import '__modules/slider';
+@import '__modules/hero';
+@import '__modules/controls';
+@import '__modules/caption';
+@import '__modules/programs';
+@import '__modules/gallery';
+@import '__modules/footer';
+@import '__modules/article.scss';
