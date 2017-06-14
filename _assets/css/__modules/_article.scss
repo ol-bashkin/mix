@@ -61,8 +61,8 @@
     }
     
     &:first-child {
+      margin-left: -12px;
       #{$s}__date, #{$s}__type, #{$s}__trainer {
-        padding-left: 0;
         border-left: 0;
       }
     }

@@ -13,3 +13,60 @@
     min-height: 0;
   }
 }
+
+.header {
+  height: 100vh;
+  min-height: 500px;
+  min-width: $second-width;
+  margin-top: -107px;
+  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  
+  &--is {
+    &-studios {
+      background-image: url(../img/_studios/studios_head.jpg)
+    }
+  }
+  
+  &__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 50%;
+    max-width: $main-width;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    flex-grow: 1;
+    height: 62px;
+    @include raleway(62px, 300, 62px);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    color: #fff;
+    &--is-medium {
+      font-weight: 500;
+    }
+  }
+  
+  &__text {
+    @include raleway(16px, 400, 28px);
+    color: rgba(#fff, 0.4);
+  }
+}

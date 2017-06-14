@@ -95,11 +95,11 @@
     &:after {
       content: '';
       display: block;
-      width: 2px;
+      width: 1px;
       height: 80px;
       margin-top: 21px;
       background-color: rgba(#fff, 0.2);
-      margin-left: 29px;
+      margin-left: 29.5px;
     }
   }
   
@@ -117,19 +117,22 @@
     background-size: 13.5px 22.5px;
     background-position: center center;
     background-repeat: no-repeat;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
     cursor: pointer;
     
-    &:hover {
-      background-color: rgba(#fff, 0.2);
-    }
     &--is-left {
-      background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 13.5 22.5" viewBox="0 0 13.5 22.5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.521 20.777-10.007-9.888 10.007-9.888" fill="none" opacity=".8" stroke="#fff"/></svg>');
-      
+      background-image: url("data:image/svg+xml;utf-8,<svg enable-background=\"new 0 0 13.5 22.5\" viewBox=\"0 0 13.5 22.5\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m11.521 20.777-10.007-9.888 10.007-9.888\" fill=\"none\" opacity=\".8\" stroke=\"#fff\"/></svg>");
+      &:hover {
+      background-image: url("data:image/svg+xml;utf-8,<svg enable-background=\"new 0 0 13.5 22.5\" viewBox=\"0 0 13.5 22.5\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m11.521 20.777-10.007-9.888 10.007-9.888\" fill=\"none\" opacity=\".8\" stroke=\"#e56b36\"/></svg>");
+    }
     }
     &--is-right {
       border-left: 1px solid rgba(#fff, 0.2);
-      background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 13.5 22.5" viewBox="0 0 13.5 22.5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.514 1.001 10.007 9.888-10.007 9.888" fill="none" opacity=".8" stroke="#fff"/></svg>');
+      background-image: url("data:image/svg+xml;utf-8,<svg enable-background=\"new 0 0 13.5 22.5\" viewBox=\"0 0 13.5 22.5\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m1.514 1.001 10.007 9.888-10.007 9.888\" fill=\"none\" opacity=\".8\" stroke=\"#ffffff\"/></svg>");
+      &:hover {
+        background-image: url("data:image/svg+xml;utf-8,<svg enable-background=\"new 0 0 13.5 22.5\" viewBox=\"0 0 13.5 22.5\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m1.514 1.001 10.007 9.888-10.007 9.888\" fill=\"none\" opacity=\".8\" stroke=\"#e56b36\"/></svg>");
+      }
+      
     }
   }
 }

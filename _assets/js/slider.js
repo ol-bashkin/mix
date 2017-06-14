@@ -15,7 +15,7 @@ function init() {
     if (currentSlide < slides) {
       numbers[currentSlide].classList.remove('controls__number--is-active');
       numbers[currentSlide + 1].classList.add('controls__number--is-active');
-      slider.style.left = curPos - 100 + '%';
+      slider.style.left = curPos - 100 + 'vw';
       currentSlide += 1;
     } else {
       numbers[currentSlide].classList.remove('controls__number--is-active');
@@ -51,12 +51,12 @@ function init() {
       numbers[currentSlide].classList.remove('controls__number--is-active');
       numbers[currentSlide - 1].classList.add('controls__number--is-active');
       
-      slider.style.left = curPos + 100 + '%';
+      slider.style.left = curPos + 100 + 'vw';
       currentSlide -= 1;
     } else {
       numbers[currentSlide].classList.remove('controls__number--is-active');
       numbers[slides].classList.add('controls__number--is-active');
-      slider.style.left = -300 + '%';
+      slider.style.left = -200 + 'vw';
       currentSlide = slides;
     }
     
@@ -77,7 +77,7 @@ function init() {
       
       numbers[currentSlide].classList.remove('controls__number--is-active');
       number.classList.add('controls__number--is-active');
-      slider.style.left = i * -100 + '%';
+      slider.style.left = i * -100 + 'vw';
       currentSlide = i;
     });
   });
