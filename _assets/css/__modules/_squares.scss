@@ -1,0 +1,145 @@
+.c-squares {
+  width: 100%;
+  min-width: $second-width;
+  background-color: #000;
+}
+
+.squares {
+  $s: &;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: #f5f5f7;
+  width: 100%;
+  max-width: $big-width;
+  min-width: $second-width;
+  margin: 0 auto;
+  
+  &--is-white {
+    background-color: transparent;
+    #{$s}{
+      &__item {
+        margin-top: 53px;
+        padding: 0 110px;
+        @media screen and (max-width: 1359px) {
+          padding-left: 55px;
+        }
+      }
+      &__title {
+        color: #fff;
+      }
+      &__divider {
+        background-color: rgba(#fff, 0.4);
+      }
+      &__text {
+        color: rgba(#fff, 0.6)
+      }
+      
+    }
+  }
+  
+  &__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    box-sizing: border-box;
+    width: 50%;
+    max-width: $big-width / 2;
+    min-width: $second-width / 2;
+    
+    padding: 100px 110px;
+    
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media screen and (max-width: 1359px) {
+      padding-left: 55px;
+    }
+    
+    &--has-photo {
+      &-team {
+        background-image: url('../img/_about/about_team.jpg');
+      }
+      &-classes {
+        background-image: url('../img/_about/about_classes.jpg');
+      }
+      &-space {
+        background-image: url('../img/_about/about_space.jpg');
+      }
+    }
+  }
+  
+  &__title {
+    flex-grow: 1;
+    height: 62px;
+    margin-right: 40px;
+    @include raleway(62px, 300, 62px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 35px;
+    
+    &--is-medium {
+      font-weight: 500;
+    }
+    
+    &-wrapper {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+      
+      #{$s}__title {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  &__divider {
+    flex-grow: 1000;
+    height: 1px;
+    width: 10px;
+    background-color: #000;
+  }
+  
+  &__text {
+    @include raleway(16px, 400, 28px);
+    color: #000;
+    margin-bottom: 10px;
+    
+  }
+  
+  &__link {
+    @include raleway(16px, 400, 18px);
+    color: rgba(#fff, 0.6);
+    text-decoration: none;
+    padding-left: 30px;
+    background-image: url('../img/_studios/email.svg');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    &:hover {
+      color: rgba($primary-color, 1);
+    }
+  }
+  
+  &__button {
+    margin-top: 25px;
+    @include button;
+  }
+}

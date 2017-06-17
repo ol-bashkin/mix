@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>MIX Studio | YOGA</title>
+  <title>MIX Studio | OUR STUDIOS</title>
   <link rel="stylesheet" href="../_assets/css/style.css">
 </head>
 <body>
   <header class="c-header">
     <nav class="menu">
       <div class="menu__wrapper">
-        <a href="../../index.html" class="menu__logo"></a>
+        <a href="../index.html" class="menu__logo"></a>
         <div class="menu__divider"></div>
         <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link">About MIX</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Studios</a></li>
+          <li class="menu__item"><a href="../about/" class="menu__link">About MIX</a></li>
+          <li class="menu__item"><p class="menu__link menu__link--is-current">Studios</p></li>
           <li class="menu__item"><a href="#" class="menu__link">Prices</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Team</a></li>
           <li class="menu__item">
@@ -28,18 +28,73 @@
       </div>
     </nav>
     <div class="header header--is-studios">
-      <div class="header__wrapper">
-        <h2 class="header__title">Our</h2>
-        <div class="header__divider"></div>
-        <h2 class="header__title header__title--is-medium">studios</h2>
-        <p class="header__text">
-          Our studios  equipped with the lasest technogym products, flattering lighing, and a cold  pressed juice bar. Don’t be scared, our classes are suitable for all levels.
-        </p>
-        <a href="mailto:info@mix-studio.ch" class="header__link">info@mix-studio.ch</a>
+      <div class="squares squares--is-white">
+        <div class="squares__item"></div>
+        <div class="squares__item">
+          <div class="squares__title-wrapper">
+            <h2 class="squares__title">Our</h2>
+            <div class="squares__divider"></div>
+          </div>
+          <h2 class="squares__title squares__title--is-medium">studios</h2>
+          <p class="squares__text">
+            Our studios  equipped with the lasest technogym products, flattering lighing, and a cold  pressed juice bar. Don’t be scared, our classes are suitable for all levels.
+          </p>
+          <a href="mailto:info@mix-studio.ch" class="squares__link">info@mix-studio.ch</a>
+        </div>
       </div>
     </div>
   </header>
-  
+  <main class="c-studios">
+    <div class="caption">
+      <h3 class="caption__title caption__title--is-left">lausanne</h3>
+      <div class="caption__divider"></div>
+    </div>
+    <div class="studios">
+      <div class="studios__studio studios__studio--is-lausanne">
+        <h4 class="studios__title">
+          Bourg studio
+        </h4>
+        <p class="studios__address">
+          Rue de bourg 11  galerie de Bourg 1103 Lausanne
+        </p>
+        <p class="studios__phone">
+          +41 21 320 1041
+        </p>
+        <a href="lausanne/" class="studios__button">
+           FIND OUT MORE
+        </a>
+      </div>
+      <div class="studios__studio studios__studio--is-lausanne-const">
+        <h4 class="studios__title studios__title--is-white">
+          Coming soon...
+        </h4>
+        <p class="studios__address studios__address--is-white">
+          If you are not already on our mailing joint to get the updates
+        </p>
+        <form method="POST" action="subscribe.php" class="studios__form">
+          <input type="email" class="studios__input-email" placeholder="Email" required="required" pattern="([\w-\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})">
+          <input type="submit" class="studios__input-submit" value="subscribe">
+        </form>
+      </div>
+    </div>
+    <div class="caption">
+      <div class="caption__divider"></div>
+      <h3 class="caption__title caption__title--is-right">zurich</h3>
+    </div>
+    <div class="studios">
+      <div class="studios__studio studios__studio--is-zurich">
+        <h4 class="studios__title">
+          zurich studio
+        </h4>
+        <p class="studios__address">
+          Rue de bourg 11 galerie de Bourg 1103 Lausanne
+        </p>
+        <p class="studios__phone">
+          +41 21 320 1041
+        </p>
+      </div>
+    </div>
+  </main>
   <footer class="c-footer c-footer--is-gray">
     <div class="footer">
       <ul class="footer-menu">

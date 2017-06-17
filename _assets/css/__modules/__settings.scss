@@ -56,8 +56,9 @@
 @mixin button {
   display: block;
   box-sizing: border-box;
-  padding: 16px 24px;
+  padding: 16px 24px 15px;
   border: 1px solid rgba($primary-color, 0.5);
+  background-color: transparent;
   
   @include raleway(12px, 500, 12px);
   color: $primary-color;
@@ -75,9 +76,21 @@
   }
 }
 
+@mixin button-inverse {
+  background-color: $primary-color;
+  color: #fff;
+  border: 1px solid $primary-color;
+  
+  &:hover {
+    background-color: #fff;
+    color: $primary-color;
+  }
+}
+
 $primary-color: #e56b36;
 $text-white: rgba(255, 255, 255, 1);
 $gray-text: #818181;
 
 $main-width: 1360px;
 $second-width: 960px;
+$big-width: 1600px;

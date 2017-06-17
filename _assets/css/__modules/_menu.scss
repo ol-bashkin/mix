@@ -1,9 +1,14 @@
 .menu {
+  $m: &;
   box-sizing: border-box;
   width: 100%;
   padding: 0 30px;
   min-width: $second-width;
-  
+  &--is-main {
+    #{$m}__link {
+      color: #fff;
+    }
+  }
   
   &__wrapper {
     display: -webkit-flex;
@@ -73,7 +78,7 @@
   }
   &__link {
     @include raleway(12px, 500, 12px);
-    color: #fff;
+    color: rgba(#fff, 0.4);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -84,6 +89,22 @@
     
     &:hover {
       color: $primary-color;
+    }
+    
+    &--is-current {
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #fff;
+        margin-top: 10px;
+      }
     }
     
   }

@@ -1,4 +1,4 @@
-@import '__modules/settings';
+@import '__modules/_settings';
 
 * {
   padding: 0;
@@ -20,3 +20,5 @@ html, body {
 @import '__modules/gallery';
 @import '__modules/footer';
 @import '__modules/article';
+@import '__modules/studios';
+@import '__modules/squares';

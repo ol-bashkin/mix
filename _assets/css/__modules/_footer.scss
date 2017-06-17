@@ -4,7 +4,7 @@
   padding: 60px 30px 65px;
   min-width: $second-width;
   
-  &--is-gray {
+  &--is-gray, &--is-white {
     background-color: #f4f4f6;
     .footer {
       &__divider {
@@ -38,6 +38,9 @@
         }
       }
     }
+  }
+  &--is-white {
+    background-color: #fff;
   }
 }
 

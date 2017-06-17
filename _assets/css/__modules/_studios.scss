@@ -1,0 +1,115 @@
+.c-studios {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 100px 30px 60px;
+  min-width: $second-width
+}
+
+.studios {
+  margin-bottom: 100px;
+  
+  &__studio {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    max-width: $main-width;
+    min-width: $second-width;
+    width: 100%;
+    height: 380px;
+    margin: 0 auto 60px;
+    background-color: #000;
+    box-shadow: 0 40px 20px -36px rgba(#000, 0.3);
+    
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    &--is {
+      &-lausanne {
+        background-image: url(../img/_studios/lasusanne_bg.png);
+      }
+      &-lausanne-const {
+        background-image: url(../img/_studios/lausanne-const_bg.png);
+      }
+      &-zurich {
+        background-image: url(../img/_studios/zurich_bg.png);
+      }
+      
+    }
+  }
+  &__title {
+    margin-top: 80px;
+    @include raleway(28px, 500, 28px);
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    
+    &--is-white {
+      color: #fff;
+      text-transform: none;
+    }
+    
+  }
+  &__address {
+    margin-bottom: 15px;
+    @include raleway(16px, 400, 24px);
+    color: #000;
+    &--is-white {
+      color: #fff;
+    }
+    
+  }
+  &__phone {
+    margin-bottom: 25px;
+    @include raleway(16px, 400, 24px);
+    color: #000;
+    
+  }
+  
+  &__button {
+    @include button;
+  }
+  &__form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  &__input {
+    &-email {
+      box-sizing: border-box;
+      width: 250px;
+      padding-left: 15px;
+      @include raleway(16px, 400, 16px);
+      letter-spacing: 0.5px;
+      color: #000;
+      
+      &:focus {
+        outline: none;
+      }
+    }
+    &-submit {
+      @include button;
+      @include button-inverse;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
