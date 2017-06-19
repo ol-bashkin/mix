@@ -24,19 +24,23 @@
     #{$s}{
       &__item {
         margin-top: 53px;
-        padding: 0 110px;
+        padding: 0 0 0 110px;
         @media screen and (max-width: 1359px) {
           padding-left: 55px;
         }
       }
       &__title {
+        height: 82px;
+        font-size: 82px;
+        line-height: 82px;
         color: #fff;
       }
       &__divider {
         background-color: rgba(#fff, 0.4);
       }
       &__text {
-        color: rgba(#fff, 0.6)
+        color: rgba(#fff, 0.6);
+        max-width: 420px;
       }
       
     }

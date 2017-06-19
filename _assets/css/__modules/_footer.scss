@@ -5,7 +5,7 @@
   min-width: $second-width;
   
   &--is-gray, &--is-white {
-    background-color: #f4f4f6;
+    background-color: $light-gray;
     .footer {
       &__divider {
         background-color: rgba(#000, 0.2);

@@ -1,8 +1,8 @@
 .c-gallery {
   box-sizing: border-box;
-  background-color: #f3f3f3;
+  background-color: $light-gray;
   padding: 100px 30px 60px;
-  min-width: $second-width
+  min-width: $second-width;
 }
 
 .gallery {
