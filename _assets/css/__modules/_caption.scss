@@ -16,8 +16,17 @@
   }
   
   &__wrapper {
-    min-width: $second-width;
-    padding: 0 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    #{$c}__title {
+        margin-bottom: 0;
+      }
   }
   
   &__divider {

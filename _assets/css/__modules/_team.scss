@@ -11,13 +11,6 @@
   max-width: $big-width;
   margin: 0 auto;
   overflow: hidden;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   
   &__wrapper {
     display: -webkit-flex;
@@ -25,11 +18,22 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    width: 4412px;
+    width: 2401px;
+    position: relative;
+    left: 0;
+
+    -wbkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    transition: left 0.5s ease-in-out;
+    
   }
   &__item {
     margin: 0 6px;
     font-size: 0;
+    background-color: #383838;
   }
   &__photo {
     vertical-align: top;
