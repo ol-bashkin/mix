@@ -1,4 +1,41 @@
 .menu-vert {
   background-color: #e6ebee;
   width: 320px;
+  
+  &__wrapper {
+    padding: 115px 75px 0 0;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    margin-bottom: 35px;
+  }
+  &__link {
+    @include raleway(16px, 500, 21px);
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    
+    &:visited, :active, :link {
+      color: #000;
+    }
+    
+    &:hover {
+      color: $primary-color;
+    }
+    
+    &--is-active {
+      color: $primary-color;
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        margin-left: -12px;
+        width: 2px;
+        height: 21px;
+        background-color: $primary-color;
+      }
+    }
+  }
 }

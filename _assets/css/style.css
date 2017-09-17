@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Raleway';
   font-weight: 300;
@@ -366,7 +367,7 @@ html, body {
   align-items: center;
   flex-wrap: wrap; }
   .caption--is-inside {
-    width: 3840px; }
+    max-width: 970px; }
   .caption__wrapper {
     display: -webkit-flex;
     display: -moz-flex;
@@ -683,7 +684,7 @@ html, body {
   width: 100%;
   box-sizing: border-box; }
   .article--is-right {
-    max-width: 1040px;
+    max-width: 1160px;
     min-width: 640px;
     padding: 115px 175px 66px 190px;
     padding-left: 190px; }
@@ -717,9 +718,27 @@ html, body {
     line-height: 28px;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 20px; }
+  .article__link {
+    color: #e56b36;
+    text-decoration: none; }
   .article__list {
     list-style-type: none;
     counter-reset: num; }
+    .article__list .article__item:before {
+      content: counter(num) ". ";
+      counter-increment: num;
+      font-weight: 500;
+      position: absolute;
+      margin-left: -35px; }
+  .article__sublist {
+    list-style-type: none; }
+    .article__sublist .article__item {
+      margin-left: 70px; }
+      .article__sublist .article__item:before {
+        content: "◦";
+        font-size: 18px;
+        position: absolute;
+        margin-left: -35px; }
   .article__item {
     font-family: "Raleway", sans-serif;
     font-size: 14px;
@@ -728,12 +747,6 @@ html, body {
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
     margin-left: 35px; }
-    .article__item:before {
-      content: counter(num) ". ";
-      counter-increment: num;
-      font-weight: 500;
-      position: absolute;
-      margin-left: -35px; }
 
 .shedule {
   display: -webkit-flex;
@@ -1153,6 +1166,34 @@ html, body {
 .menu-vert {
   background-color: #e6ebee;
   width: 320px; }
+  .menu-vert__wrapper {
+    padding: 115px 75px 0 0; }
+  .menu-vert__list {
+    list-style-type: none; }
+  .menu-vert__item {
+    margin-bottom: 35px; }
+  .menu-vert__link {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; }
+    .menu-vert__link:visited, .menu-vert__link :active, .menu-vert__link :link {
+      color: #000; }
+    .menu-vert__link:hover {
+      color: #e56b36; }
+    .menu-vert__link--is-active {
+      color: #e56b36; }
+      .menu-vert__link--is-active:before {
+        display: block;
+        content: '';
+        position: absolute;
+        margin-left: -12px;
+        width: 2px;
+        height: 21px;
+        background-color: #e56b36; }
 
 .l-container {
   min-width: 960px;
