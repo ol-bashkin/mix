@@ -13,6 +13,12 @@
     background-position: -600px 0;
     background-size: cover;
     background-repeat: no-repeat;
+    
+    .article {
+      max-width: $main-width;
+      margin: 0 auto;
+      padding-left: 343px;
+    }
   }
 
 }
@@ -20,9 +26,7 @@
   $a: &;
   width: 100%;
   box-sizing: border-box;
-  //max-width: $main-width;
-  //margin: 0 auto;
-  //padding-left: 343px;
+  
   &--is-right {
     max-width: 1160px;
     min-width: 640px;

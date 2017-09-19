@@ -64,6 +64,8 @@ html, body {
     background-image: url(../img/_studios/studios_head.jpg); }
   .header--is-about {
     background-image: url(../img/_about/about_head.jpg); }
+  .header--is-team {
+    background-image: url(../img/_team/team_head.jpg); }
 
 .menu {
   box-sizing: border-box;
@@ -679,6 +681,10 @@ html, body {
     background-position: -600px 0;
     background-size: cover;
     background-repeat: no-repeat; }
+    .c-article--is-yoga .article {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding-left: 343px; }
 
 .article {
   width: 100%;

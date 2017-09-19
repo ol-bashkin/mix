@@ -35,10 +35,13 @@
   
   &--is {
     &-studios {
-      background-image: url(../img/_studios/studios_head.jpg)
+      background-image: url(../img/_studios/studios_head.jpg);
     }
     &-about {
-      background-image: url(../img/_about/about_head.jpg)
+      background-image: url(../img/_about/about_head.jpg);
+    }
+    &-team {
+      background-image: url(../img/_team/team_head.jpg);
     }
   }
   
