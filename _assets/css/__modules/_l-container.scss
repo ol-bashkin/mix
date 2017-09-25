@@ -50,6 +50,19 @@
         padding-right: 30px;
         background-color: #fff;
       }
+      &-yoga {
+        background-image: url(../img/_yoga/yoga_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &-team {
+        &-angelina {
+          background-image: url(../img/_team/_personal/angelina/angelina.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center top;
+        }
+      }
     }
   }
 }

@@ -629,6 +629,10 @@ html, body {
         display: -ms-flex;
         display: -o-flex;
         display: flex; }
+      .footer-menu__item--is-black .footer-menu__social--is-instagram {
+        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z"/><path d="m12 5.836c-3.404 0-6.163 2.76-6.163 6.164s2.759 6.163 6.163 6.163 6.164-2.759 6.164-6.163-2.76-6.164-6.164-6.164zm0 10.164c-2.209 0-4-1.791-4-4s1.791-4.001 4-4.001 4.001 1.792 4.001 4.001-1.792 4-4.001 4z"/><circle cx="18.484" cy="5.593" r="1.44"/></g></svg>'); }
+      .footer-menu__item--is-black .footer-menu__social--is-fb {
+        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.313 8.319v1.665h2.516l-.328 2.608h-2.188v6.691h-2.625v-6.691h-2.194v-2.608h2.194v-1.923c0-2.232 1.329-3.447 3.269-3.447.929 0 1.728.071 1.96.103v2.332l-1.345.001c-1.055 0-1.259.514-1.259 1.269z" fill="#000"/><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z" fill="#000"/></svg>'); }
     .footer-menu__caption {
       font-family: "Raleway", sans-serif;
       font-size: 12px;
@@ -822,6 +826,26 @@ html, body {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     margin-bottom: 13px; }
     .trainers__link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 49px 30px -50px rgba(0, 0, 0, 0.5); }
+
+.spotify {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  list-style-type: none; }
+  .spotify__item {
+    display: block;
+    background-color: #d2d2d2;
+    margin-right: 12px;
+    width: 204px;
+    height: 204px;
+    box-shadow: 0 35px 20px -36px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 13px; }
+    .spotify__item:hover {
       transform: scale(1.05);
       box-shadow: 0 49px 30px -50px rgba(0, 0, 0, 0.5); }
 
@@ -1243,5 +1267,14 @@ html, body {
       width: 1070px;
       padding-right: 30px;
       background-color: #fff; }
+    .l-container__column--is-yoga {
+      background-image: url(../img/_yoga/yoga_bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .l-container__column--is-team-angelina {
+      background-image: url(../img/_team/_personal/angelina/angelina.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top; }
 
 /*# sourceMappingURL=style.css.map */
