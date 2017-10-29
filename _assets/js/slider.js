@@ -1,7 +1,7 @@
 function init() {
   "use strict";
   var slider = document.getElementsByClassName('js-slider')[0],
-    slides = document.getElementsByClassName('js-slide'),
+    slides = document.getElementsByClassName('js-slide').length - 1,
     numbers = document.getElementsByClassName('js-number'),
     leftArrow = document.getElementsByClassName('js-switch-left')[0],
     rightArrow = document.getElementsByClassName('js-switch-right')[0],
@@ -23,7 +23,6 @@ function init() {
       slider.style.left = 0;
       currentSlide = 0;
     }
-    console.log(currentSlide);
   }
   
   function timization() {
@@ -36,9 +35,7 @@ function init() {
   }
   
   function slideRight() {
-    
     timization();
-    
     autoSlide();
   }
   
@@ -56,14 +53,12 @@ function init() {
     } else {
       numbers[currentSlide].classList.remove('controls__number--is-active');
       numbers[slides].classList.add('controls__number--is-active');
-      slider.style.left = -200 + 'vw';
+      slider.style.left = -(slides * 100) + 'vw';
       currentSlide = slides;
     }
     
-    console.log(currentSlide);
   }
   
-  slides = slides.length - 1;
   slider.style.left = sliderStyle.left;
   
   timer = window.setInterval(autoSlide, '4000');

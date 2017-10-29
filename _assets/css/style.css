@@ -233,6 +233,8 @@ html, body {
       background-image: url(../img/_header/slide_bg_2.jpg); }
     .slider__slide--is-third {
       background-image: url(../img/_header/slide_bg_3.jpg); }
+    .slider__slide--is-fourth {
+      background-image: url(../img/_header/slide_bg_4.jpg); }
 
 .hero {
   max-width: 1360px;
