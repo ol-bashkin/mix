@@ -132,7 +132,7 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    padding: 17px 20px;
+    padding: 17px 15px;
     display: block;
     transition: color 0.3s ease-in-out; }
     .menu__link:hover {
@@ -244,6 +244,7 @@ html, body {
     font-size: 82px;
     font-weight: 500;
     line-height: 98px;
+    text-transform: uppercase;
     color: #fff;
     max-width: 680px;
     margin-left: -6px; }
@@ -517,6 +518,13 @@ html, body {
       box-shadow: 0 55px 30px -50px rgba(0, 0, 0, 0.5); }
     .gallery__link:last-child {
       margin-right: 0; }
+  .gallery__video {
+    width: 100%;
+    max-width: 1360px;
+    max-height: 765px;
+    min-height: 540px;
+    height: 100%;
+    box-shadow: 0 40px 20px -36px rgba(0, 0, 0, 0.8); }
   .gallery__img {
     display: block;
     width: 100%;

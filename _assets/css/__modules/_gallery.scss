@@ -44,6 +44,14 @@
       margin-right: 0;
     }
   }
+  &__video {
+    width: 100%;
+    max-width: $main-width;
+    max-height: 765px;
+    min-height: 540px;
+    height: 100%;
+    box-shadow: 0 40px 20px -36px rgba(#000, 0.8);
+  }
   
   &__img {
     display: block;
