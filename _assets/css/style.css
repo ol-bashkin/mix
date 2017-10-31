@@ -63,7 +63,7 @@ html, body {
   .header--is-studios {
     background-image: url(../img/_studios/studios_head.jpg); }
   .header--is-about {
-    background-image: url(../img/_about/about_head.jpg); }
+    background-image: url(../img/_about/about_head-2.jpg); }
   .header--is-team {
     background-image: url(../img/_team/team_head.jpg); }
 
@@ -189,7 +189,8 @@ html, body {
     text-decoration: none;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-left: 15px; }
     .menu__button:hover {
       background-color: #e56b36;
       color: #fff; }
