@@ -47,6 +47,7 @@
   &__lead {
     @include raleway(20px, 400, 28px);
     margin-bottom: 20px;
+    max-width: 630px;
   }
   &__subhead {
     @include raleway(16px, 600, 28px);
@@ -56,8 +57,9 @@
   }
   
   &__text {
+    max-width: 630px;
     @include raleway(14px, 400, 28px);
-    color: rgba(#000, 0.7);
+    color: #000; //rgba(#000, 0.7);
     margin-bottom: 20px;
   }
   
@@ -65,9 +67,18 @@
     color: $primary-color;
     text-decoration: none;
   }
+  
+  &__button {
+    @include button;
+    width: 204px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
   &__list {
     list-style-type: none;
     counter-reset: num;
+    max-width: 630px;
     
     #{$a}__item {
       &:before {
@@ -100,6 +111,70 @@
   }
 }
 
+.icons {
+  $s: &;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  max-width: 630px;
+  margin-top: 40px;
+  
+  list-style-type: none;
+  
+  &__item {
+    display: block;
+    min-width: 204px;
+    margin-right: 12px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  &__text {
+    @include raleway(14px, 500, 14px);
+    color: #000;
+    padding-left: 40px;
+    margin-bottom: 14px;
+    
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      margin-left: -40px;
+      width: 26px;
+      height: 19px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &--is {
+      &-towel {
+        &:before {
+          background-image: url(../../_assets/img/_studios/bourg/icons/towel.svg);
+        }
+      }
+      &-change {
+        &:before {
+          background-image: url(../..//_assets/img/_studios/bourg/icons/change.svg);
+        }
+      }
+      &-shop {
+        &:before {
+          background-image: url(../../_assets/img/_studios/bourg/icons/shop.svg);
+        }
+      }
+      &-spa {
+        &:before {
+          background-image: url(../../_assets/img/_studios/bourg/icons/spa.svg);
+        }
+      }
+    }
+  }
+}
+
 .shedule {
   $s: &;
   display: -webkit-flex;
@@ -108,13 +183,15 @@
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+  max-width: 630px;
+  margin-top: 24px;
   
   list-style-type: none;
   
   &__item {
     display: block;
-    width: 161px;
-    margin-right: 13px;
+    width: 204px;
+    margin-right: 12px;
     
     &:last-child {
       margin-right: 0;
@@ -122,10 +199,23 @@
     
     &:first-child {
       margin-left: -12px;
-      #{$s}__date, #{$s}__type, #{$s}__trainer {
+      #{$s}__date, #{$s}__type, #{$s}__trainer, #{$s}__caption {
         border-left: 0;
       }
     }
+  }
+  &__caption {
+    @include raleway(16px, 600, 16px);
+    color: #000;
+    padding-left: 12px;
+    border-left: 1px solid rgba(#000, 0.2);
+    margin-bottom: 14px;
+  }
+  &__text {
+    @include raleway(14px, 500, 14px);
+    color: #000;
+    padding-left: 12px;
+    margin-bottom: 14px;
   }
   &__date {
     @include raleway(16px, 500, 16px);
@@ -144,6 +234,25 @@
     @include raleway(16px, 400, 16px);
     color: #000;
     padding-left: 12px;
+  }
+}
+
+.images {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  
+  margin-top: 40px;
+  
+  &__item {
+    display: block;
+    width: 204px;
+    height: 204px;
+    box-shadow: 0 35px 20px -36px rgba(#000, 0.8);
+    margin-right: 12px;
+    margin-bottom: 13px;
   }
 }
 

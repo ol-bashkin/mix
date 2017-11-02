@@ -32,7 +32,6 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    
     &--is {
       &-left {
         justify-content: flex-end;
@@ -62,6 +61,11 @@
           background-repeat: no-repeat;
           background-position: center top;
         }
+      }
+    }
+    &--has {
+      &-nopad {
+        padding-left: 0;
       }
     }
   }

@@ -30,11 +30,12 @@
     
   </header>
   
-  
-  <!--<main class="c-article c-article--is-yoga">-->
   <main class="l-container">
     <div class="l-container__row">
-      <div class="l-container__column l-container__column--is-left l-container__column--is-yoga">
+      <div class="l-container__column l-container__column--is-left l-container__column--has-nopad">
+        <div class="map" id="map">
+          
+        </div>
       </div>
       <div class="l-container__column l-container__column--is-right">
         <article class="article">
@@ -46,45 +47,72 @@
             <p class="article__text">
               Our original location, the Bourg Studio, is located just off the iconic Place St. Francois. Find us down the cirwar ramp after Delices Cafe and next to goitar shop 
             </p>
+            <ul class="icons">
+              <li class="icons__item">
+                <p class="icons__text icons__text--is-towel">
+                  Towels-Product «Stop&nbsp;the&nbsp;water»
+                </p>
+                <p class="icons__text icons__text--is-change">
+                  Changing room
+                </p>
+              </li>
+              <li class="icons__item">
+                <p class="icons__text icons__text--is-shop">
+                  Shop
+                </p>
+                <p class="icons__text icons__text--is-spa">
+                  Spa-Shirin B
+                </p>
+              </li>
+            </ul>
+            <div class="images">
+              <img src="../../_assets/img/_studios/bourg/bourg_img-1.jpg" alt="bourg" class="images__item">
+              <img src="../../_assets/img/_studios/bourg/bourg_img-2.jpg" alt="bourg" class="images__item">
+              <img src="../../_assets/img/_studios/bourg/bourg_img-3.jpg" alt="bourg" class="images__item">
+            </div>
             
-            <h3 class="article__subhead">Upcoming classes</h3>
+            <h3 class="article__subhead">Classes</h3>
             <ul class="shedule">
               <li class="shedule__item">
-                <p class="shedule__date">Sun 07:00AM</p>
-                <p class="shedule__type">Base</p>
-                <p class="shedule__trainer">Nora</p>
+                <p class="shedule__caption">Available</p>
+                <p class="shedule__text">Barre</p>
+                <p class="shedule__text">Try</p>
+                <p class="shedule__text">Yoga</p>
               </li>
               <li class="shedule__item">
-                <p class="shedule__date">Mon 12:00AM</p>
-                <p class="shedule__type">Open</p>
-                <p class="shedule__trainer">Sheila</p>
-              </li>
-              <li class="shedule__item">
-                <p class="shedule__date">Mon 07:00AM</p>
-                <p class="shedule__type">Base</p>
-                <p class="shedule__trainer">Nora</p>
-              </li>
-              <li class="shedule__item">
-                <p class="shedule__date">Sat 12:00AM</p>
-                <p class="shedule__type">Open</p>
-                <p class="shedule__trainer">Sheila</p>
+                <p class="shedule__caption">One to one</p>
+                <p class="shedule__text">Private try</p>
+                <p class="shedule__text">Private Yoga</p>
               </li>
             </ul>
-            <h3 class="article__subhead">trainers</h3>
-            <ul class="trainers">
-              <li class="trainers__item">
-                <p class="trainers__name">Sheila</p>
-                <a href="../../team/sheila" class="trainers__link">
-                  <img src="../../_assets/img/_yoga/sheila.jpg" alt="Sheila" class="trainers__photo">
-                </a>
+            
+            <h3 class="article__subhead">Contacts</h3>
+            <ul class="shedule">
+              <li class="shedule__item">
+                <p class="shedule__caption">Telephone number</p>
+                <p class="shedule__text">+41 21 320 1041</p>
               </li>
-              <li class="trainers__item">
-                <p class="trainers__name">Nora</p>
-                <a href="../../team/nora" class="trainers__link">
-                  <img src="../../_assets/img/_yoga/nora.jpg" alt="Nora" class="trainers__photo">
-                </a>
+              <li class="shedule__item">
+                <p class="shedule__caption">Studio manager</p>
+                <p class="shedule__text">Shirin Beram</p>
               </li>
             </ul>
+            <ul class="shedule">
+              <li class="shedule__item">
+                <p class="shedule__caption">Adress</p>
+                <p class="shedule__text">Rue de bourg 11<br>galerie de Bourg 1103 Lausanne</p>
+                <p class="shedule__text"></p>
+              </li>
+              <li class="shedule__item">
+                <p class="shedule__caption">Оpening hours</p>
+                <p class="shedule__text">Open 7 days week 30 mins prior and post schedule classes</p>
+              </li>
+            </ul>
+            
+            <a href="https://clients.mindbodyonline.com/classic/ws?studioid=693381&stype=-98" class="article__button">
+               Sign up
+            </a>
+            
           </div>
         </article>
       </div>
@@ -131,5 +159,10 @@
     </div>
   </footer>
   
+  
+  <script src="../../_assets/js/map.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVVH_sNL6bjByqSGCJogNH65U_CVDkSiI&callback=initMap">
+  </script>
 </body>
 </html>
