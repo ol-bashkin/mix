@@ -70,6 +70,7 @@
   
   &__button {
     @include button;
+    @include button-inverse;
     width: 204px;
     text-align: center;
     margin-top: 40px;
