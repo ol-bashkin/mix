@@ -39,6 +39,12 @@
     @include raleway (200px, 500, 158px);
     text-align: center;
     
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    
     background: $light-gray; /* Old browsers */
     background: -moz-linear-gradient(top, rgba($light-gray, 0.7) 0%, rgba($gray, 0.7) 50%, rgba($light-gray, 0.7) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba($light-gray, 0.7) 0%, rgba($gray, 0.7) 50%, rgba($light-gray, 0.7) 100%); /* Chrome10-25,Safari5.1-6 */
