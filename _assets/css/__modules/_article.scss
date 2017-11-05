@@ -61,6 +61,11 @@
     @include raleway(14px, 400, 28px);
     color: #000; //rgba(#000, 0.7);
     margin-bottom: 20px;
+    
+    &--is-gray {
+      color: $gray-text;
+      max-width: $main-width;
+    }
   }
   
   &__link {
