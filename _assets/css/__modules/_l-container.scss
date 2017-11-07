@@ -1,5 +1,6 @@
 .l-container {
   min-width: $second-width;
+  box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
   background-color: #000;
@@ -16,6 +17,9 @@
     &-gray {
       background-color: $light-gray;
     }
+    &-narrow {
+      padding: 0 (30px - ($gutter / 2));
+    }
   }
   
   &__row {
@@ -29,7 +33,9 @@
     min-width: $second-width;
     &--is {
       &-narrow {
+        box-sizing: border-box;
         max-width: $main-width + $gutter;
+        min-width: $second-width - (60px - $gutter);
       }
     }
     &--has {

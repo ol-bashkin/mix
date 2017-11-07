@@ -1349,6 +1349,7 @@ html, body {
 
 .l-container {
   min-width: 960px;
+  box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
   background-color: #000;
@@ -1361,6 +1362,8 @@ html, body {
   flex-wrap: wrap; }
   .l-container--is-gray {
     background-color: #f3f3f3; }
+  .l-container--is-narrow {
+    padding: 0 24px; }
   .l-container__row {
     display: -webkit-flex;
     display: -moz-flex;
@@ -1371,7 +1374,9 @@ html, body {
     max-width: 1600px;
     min-width: 960px; }
     .l-container__row--is-narrow {
-      max-width: 1372px; }
+      box-sizing: border-box;
+      max-width: 1372px;
+      min-width: 912px; }
     .l-container__row--has-space {
       margin-top: 100px; }
       .l-container__row--has-space-after {
