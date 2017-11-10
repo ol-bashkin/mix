@@ -36,6 +36,9 @@
         box-sizing: border-box;
         max-width: $main-width + $gutter;
         min-width: $second-width - (60px - $gutter);
+        &:first-child {
+          margin-top: 70px;
+        }
       }
     }
     &--has {
@@ -46,9 +49,7 @@
         }
       }
     }
-    &:first-child {
-      margin-top: 70px;
-    }
+    
   }
   &__column {
     box-sizing: border-box;

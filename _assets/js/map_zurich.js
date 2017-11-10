@@ -1,8 +1,8 @@
 function initMap() {
   'use strict';
   var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 46.5202688, lng: 6.6343104},
-      zoom: 21,
+      center: {lat: 47.356006, lng: 8.550272},
+      zoom: 18,
       disableDefaultUI: true,
       gestureHandling: 'greedy',
       styles: [
@@ -21,7 +21,7 @@ function initMap() {
     markerSize = new google.maps.Size(150, 90),
     marker = new google.maps.Marker({
 
-      position: {lat: 46.5202688, lng: 6.6343104},
+      position: {lat: 47.356006, lng: 8.550272},
 
       icon: {
         url: '../../_assets/img/_studios/bourg/icons/studio_marker.png',

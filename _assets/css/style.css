@@ -1399,12 +1399,12 @@ html, body {
       box-sizing: border-box;
       max-width: 1372px;
       min-width: 912px; }
+      .l-container__row--is-narrow:first-child {
+        margin-top: 70px; }
     .l-container__row--has-space {
       margin-top: 100px; }
       .l-container__row--has-space-after {
         margin-bottom: 100px; }
-    .l-container__row:first-child {
-      margin-top: 70px; }
   .l-container__column {
     box-sizing: border-box;
     max-width: 1600px;
