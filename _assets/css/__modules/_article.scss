@@ -109,6 +109,20 @@
       }
     }
   }
+  &__subordered {
+    list-style-type: none;
+    counter-reset: abc;
+    #{$a}__item {
+      margin-left: 35px;
+      &:before {
+        content: counter(abc, lower-latin) '. ';
+        counter-increment: abc;
+        font-weight: 500;
+        position: absolute;
+        margin-left: -35px;
+      }
+    }
+  }
   &__item {
     @include raleway(14px, 400, 28px);
     color: rgba(#000, 0.7);
