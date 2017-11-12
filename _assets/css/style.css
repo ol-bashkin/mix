@@ -786,8 +786,19 @@ html, body {
       font-weight: 500;
       position: absolute;
       margin-left: -35px; }
+  .article__ulist {
+    list-style-type: none;
+    max-width: 630px; }
+    .article__ulist .article__item {
+      margin-left: 35px; }
+      .article__ulist .article__item:before {
+        content: "◦";
+        font-size: 18px;
+        position: absolute;
+        margin-left: -35px; }
   .article__sublist {
-    list-style-type: none; }
+    list-style-type: none;
+    max-width: 630px; }
     .article__sublist .article__item {
       margin-left: 70px; }
       .article__sublist .article__item:before {
@@ -1353,10 +1364,10 @@ html, body {
   .menu-vert--is-sticked {
     position: fixed;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     top: 137px; }
     .menu-vert--is-sticked .menu-vert__wrapper {
-      padding-top: 35px; }
+      padding-top: 70px; }
   .menu-vert__wrapper {
     padding: 115px 75px 0 0; }
   .menu-vert__list {

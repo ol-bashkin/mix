@@ -22,13 +22,18 @@ function init() {
       mainHeight = parseInt(mainStyle.height, 10),
       menu = document.getElementsByClassName('js-menu-vert')[0],
       menuStyle = window.getComputedStyle(menu),
-      menuHeight = parseInt(menuStyle.height, 10),
+      menuHeight = parseInt(window.getComputedStyle(document.getElementsByClassName('menu-vert__list')[0]).height, 10),
       footer = document.getElementsByClassName('js-footer')[0],
       footerStyle = window.getComputedStyle(footer),
       footerHeight = parseInt(footerStyle.height, 10),
       scrolled = window.pageYOffset || document.documentElement.scrollTop,
       windowHeight = document.documentElement.clientHeight;
     menu.style.top = headerStyle.height + 'px';
+    if (menuHeight < windowHeight - headerHeight - footerHeight) {
+      menu.style.overflowY = 'auto';
+    } else {
+      menu.style.overflowY = 'scroll';
+    }
 
     if (scrolled <= headerHeight) {
       menu.style.height = windowHeight - headerHeight + scrolled + 'px';

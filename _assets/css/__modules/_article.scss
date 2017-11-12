@@ -97,8 +97,22 @@
     }
     
   }
+  &__ulist {
+    list-style-type: none;
+    max-width: 630px;
+    #{$a}__item {
+      margin-left: 35px;
+      &:before {
+        content: "◦";
+        font-size: 18px;
+        position: absolute;
+        margin-left: -35px;
+      }
+    }
+  }
   &__sublist {
     list-style-type: none;
+    max-width: 630px;
     #{$a}__item {
       margin-left: 70px;
       &:before {

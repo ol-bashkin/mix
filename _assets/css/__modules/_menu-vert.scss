@@ -5,10 +5,10 @@
   &--is-sticked {
     position: fixed;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     top: 137px;
     #{$mw}__wrapper {
-      padding-top: 35px;
+      padding-top: 70px;
     }
   }
   
