@@ -1,0 +1,40 @@
+.popup {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  cursor: pointer;
+  &--is-visible {
+    display: block;
+  }
+  
+  &__frame {
+    position: fixed;
+    border: 2px solid $primary-color;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -189px;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 600px;
+    height: 378px;
+    padding: 75px;
+    cursor: default;
+  }
+  &__text {
+    @include raleway(14px, 500, 14px);
+    color: #000;
+    display: inline-block;
+    padding-top: 16px;
+  }
+  &__button {
+    @include button;
+    @include button-inverse;
+    width: 100px;
+    text-align: center;
+    float: right;
+  }
+}

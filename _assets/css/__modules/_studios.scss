@@ -80,6 +80,10 @@
   
   &__button {
     @include button;
+    @include button-inverse;
+    &:hover {
+      background-color: transparent;
+    }
   }
   &__form {
     display: -webkit-flex;

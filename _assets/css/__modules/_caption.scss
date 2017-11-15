@@ -25,7 +25,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 10px;
-    #{$c}__title {
+    #{$c}__title, #{$c}__divider {
         margin-bottom: 0;
       }
   }
