@@ -848,10 +848,24 @@ html, body {
     transition: outline-color 0.2s ease-in-out; }
     .article__input:focus {
       background-color: #fff;
-      outline: 2px solid #e56b36; }
+      outline: 2px solid #000; }
     .article__input--is-textarea {
       height: 143px;
       padding-top: 22px; }
+    .article__input--has-error {
+      background-color: #fff;
+      outline: 2px solid #e56b36;
+      color: #e56b36;
+      /* Firefox 19+ */
+      /* Firefox 18- */ }
+      .article__input--has-error::-webkit-input-placeholder {
+        color: #e56b36; }
+      .article__input--has-error::-moz-placeholder {
+        color: #e56b36; }
+      .article__input--has-error:-moz-placeholder {
+        color: #e56b36; }
+      .article__input--has-error:-ms-input-placeholder {
+        color: #e56b36; }
   .article__submit {
     display: block;
     box-sizing: border-box;
@@ -1696,15 +1710,19 @@ html, body {
       background-color: #fff; }
 
 .popup {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.85);
   height: 100%;
   width: 100%;
   z-index: 1000;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: visibility 0s linear 0.3s, opacity 0.3s ease-in-out; }
   .popup--is-visible {
-    display: block; }
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.3s ease-in-out; }
   .popup__frame {
     position: fixed;
     border: 2px solid #e56b36;

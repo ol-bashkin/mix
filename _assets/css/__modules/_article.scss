@@ -169,13 +169,22 @@
     
     &:focus {
       background-color: #fff;
-      outline: 2px solid $primary-color;
+      outline: 2px solid #000;
     }
     
     &--is-textarea {
       height: 143px;
       padding-top: 22px;
-    } 
+    }
+    &--has-error {
+      background-color: #fff;
+      outline: 2px solid $primary-color;
+      color: $primary-color;
+      &::-webkit-input-placeholder {color:$primary-color;}
+      &::-moz-placeholder          {color:$primary-color;}/* Firefox 19+ */
+      &:-moz-placeholder           {color:$primary-color;}/* Firefox 18- */
+      &:-ms-input-placeholder      {color:$primary-color;}
+    }
   }
   &__submit {
     @include button;
