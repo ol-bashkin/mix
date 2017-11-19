@@ -56,7 +56,6 @@
     max-width: $big-width;
     width: 100%;
     min-width: 231px;
-
     
     display: -webkit-flex;
     display: -moz-flex;
@@ -99,16 +98,47 @@
         background-color: #fff;
       }
       &-yoga {
-        background-image: url(../img/_yoga/yoga_bg.jpg);
+        background-image: url(../img/_yoga/yoga_bg-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &-trx {
+        background-image: url(../img/_trx/trx_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &-barre {
+        background-image: url(../img/_barre/barre_bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
       &-team {
-        &-angelina {
-          background-image: url(../img/_team/_personal/angelina/angelina.jpg);
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        &-beram {
+          background-image: url(../img/_team/_personal/beram/beram.jpg);   
+        }
+        &-bessler {
+          background-image: url(../img/_team/_personal/bessler/bessler.jpg);   
+        }
+        &-chazot {
+          background-image: url(../img/_team/_personal/chazot/chazot.jpg);   
+        }
+        &-laverde {
+          background-image: url(../img/_team/_personal/laverde/laverde.jpg);   
+        }
+        &-lutz {
+          background-image: url(../img/_team/_personal/lutz/lutz.jpg);   
+        }
+        &-pais {
+          background-image: url(../img/_team/_personal/pais/pais.jpg);   
+        }
+        &-garcia {
+          background-image: url(../img/_team/_personal/garcia/garcia.jpg);   
+        }
+        &-tetah {
+          background-image: url(../img/_team/_personal/tetah/tetah.jpg);   
         }
       }
     }

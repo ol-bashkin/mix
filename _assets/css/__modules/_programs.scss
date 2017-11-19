@@ -20,6 +20,9 @@
   &__item {
     display: block;
     margin-right: 13px;
+    min-width: 216px;
+    width: 331px;
+    
     &:last-child {
       margin-right: 0;
     }
@@ -35,11 +38,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex-grow: 1;
     
     box-sizing: border-box;
     padding: 48px;
     max-width: 331px;
     height: 600px;
+    min-width: 216px;
     
     background-color: #000;
     background-size: cover;
@@ -58,7 +63,7 @@
     
     &--is{
       &-fuse {
-        background-image: url(../img/_programs/fuse_bg.jpg);
+        background-image: url(../img/_programs/fuse_coming_bg.jpg);
       }
       &-trx {
         background-image: url(../img/_programs/trx_bg.jpg);
@@ -68,6 +73,12 @@
       }
       &-yoga {
         background-image: url(../img/_programs/yoga_bg.jpg);
+      }
+      &-passive {
+        &:hover {
+          transform: none;
+          box-shadow: 0 40px 20px -36px rgba(#000, 0.8);
+        }
       }
       
     }
