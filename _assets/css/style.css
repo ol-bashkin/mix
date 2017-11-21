@@ -149,6 +149,8 @@ html, body {
         height: 1px;
         background-color: #fff;
         margin-top: 10px; }
+    .menu__link--is-passive:hover {
+      color: rgba(255, 255, 255, 0.4); }
   .menu__language {
     font-family: "Raleway", sans-serif;
     font-size: 12px;
