@@ -24,7 +24,7 @@ function initMap() {
       position: {lat: 47.356006, lng: 8.550272},
 
       icon: {
-        url: '../../_assets/img/_studios/bourg/icons/studio_marker.png',
+        url: '../../../_assets/img/_studios/bourg/icons/studio_marker.png',
         size: markerSize,
         scaledSize: markerSize,
         anchor: new google.maps.Point(75, 87)
