@@ -26,6 +26,11 @@ function init() {
     valid = result.reduce(function (previus, current) {
       return previus && current;
     });
+    if (valid) {
+      if (!popup.classList.contains('popup--is-visible')) {
+        popup.classList.add('popup--is-visible');
+      }
+    }
   });
  
   popup.addEventListener('click', function () {
