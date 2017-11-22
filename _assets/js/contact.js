@@ -10,11 +10,13 @@ function init() {
       if (!event.target.classList.contains('article__input--has-error')) {
         event.target.classList.add('article__input--has-error');
       }
+      event.target.placeholder = 'Enter correct ' + event.target.placeholder;
     });
     input.addEventListener('focus', function (event) {
       if (event.target.classList.contains('article__input--has-error')) {
         event.target.classList.remove('article__input--has-error');
       }
+      event.target.placeholder = event.target.placeholder.replace('Enter correct ', '');
     });
   });
   submit.addEventListener('click', function () {
