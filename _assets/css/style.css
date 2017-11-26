@@ -469,7 +469,7 @@ html, body {
       transform: scale(1.05);
       box-shadow: 0 55px 30px -50px rgba(0, 0, 0, 0.5); }
     .programs__link--is-fuse {
-      background-image: url(../img/_programs/fuse_coming_bg.jpg); }
+      background-image: url(../img/_programs/fuse_bg.jpg); }
     .programs__link--is-trx {
       background-image: url(../img/_programs/trx_bg.jpg); }
     .programs__link--is-barre {
