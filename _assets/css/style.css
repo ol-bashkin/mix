@@ -356,14 +356,14 @@ html, body {
     transition: background-image 0.2s ease-in-out;
     cursor: pointer; }
     .controls__arrow--is-left {
-      background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 13.5 22.5" viewBox="0 0 13.5 22.5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.521 20.777-10.007-9.888 10.007-9.888" fill="none" opacity=".8" stroke="#fff"/></svg>'); }
+      background-image: url("../img/arrow_left.svg"); }
       .controls__arrow--is-left:hover {
-        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 13.5 22.5" viewBox="0 0 13.5 22.5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.521 20.777-10.007-9.888 10.007-9.888" fill="none" opacity=".8" stroke="#e56b36"/></svg>'); }
+        background-image: url("../img/arrow_left_or.svg"); }
     .controls__arrow--is-right {
       border-left: 1px solid rgba(255, 255, 255, 0.2);
-      background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 13.5 22.5" viewBox="0 0 13.5 22.5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.514 1.001 10.007 9.888-10.007 9.888" fill="none" opacity=".8" stroke="#ffffff"/></svg>'); }
+      background-image: url("../img/arrow_right.svg"); }
       .controls__arrow--is-right:hover {
-        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 13.5 22.5" viewBox="0 0 13.5 22.5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.514 1.001 10.007 9.888-10.007 9.888" fill="none" opacity=".8" stroke="#e56b36"/></svg>'); }
+        background-image: url("../img/arrow_right_or.svg"); }
 
 .caption {
   max-width: 1360px;
@@ -594,9 +594,9 @@ html, body {
       .c-footer--is-gray .footer-menu__link:hover, .c-footer--is-white .footer-menu__link:hover {
         border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
     .c-footer--is-gray .footer-menu__social--is-instagram, .c-footer--is-white .footer-menu__social--is-instagram {
-      background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z"/><path d="m12 5.836c-3.404 0-6.163 2.76-6.163 6.164s2.759 6.163 6.163 6.163 6.164-2.759 6.164-6.163-2.76-6.164-6.164-6.164zm0 10.164c-2.209 0-4-1.791-4-4s1.791-4.001 4-4.001 4.001 1.792 4.001 4.001-1.792 4-4.001 4z"/><circle cx="18.484" cy="5.593" r="1.44"/></g></svg>'); }
+      background-image: url("../img/_footer/instagram.svg"); }
     .c-footer--is-gray .footer-menu__social--is-fb, .c-footer--is-white .footer-menu__social--is-fb {
-      background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.313 8.319v1.665h2.516l-.328 2.608h-2.188v6.691h-2.625v-6.691h-2.194v-2.608h2.194v-1.923c0-2.232 1.329-3.447 3.269-3.447.929 0 1.728.071 1.96.103v2.332l-1.345.001c-1.055 0-1.259.514-1.259 1.269z" fill="#000"/><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z" fill="#000"/></svg>'); }
+      background-image: url("../img/_footer/fb.svg"); }
   .c-footer--is-white {
     background-color: #fff; }
 
@@ -654,9 +654,9 @@ html, body {
         display: -o-flex;
         display: flex; }
       .footer-menu__item--is-black .footer-menu__social--is-instagram {
-        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z"/><path d="m12 5.836c-3.404 0-6.163 2.76-6.163 6.164s2.759 6.163 6.163 6.163 6.164-2.759 6.164-6.163-2.76-6.164-6.164-6.164zm0 10.164c-2.209 0-4-1.791-4-4s1.791-4.001 4-4.001 4.001 1.792 4.001 4.001-1.792 4-4.001 4z"/><circle cx="18.484" cy="5.593" r="1.44"/></g></svg>'); }
+        background-image: url("../img/_footer/instagram_white.svg"); }
       .footer-menu__item--is-black .footer-menu__social--is-fb {
-        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.313 8.319v1.665h2.516l-.328 2.608h-2.188v6.691h-2.625v-6.691h-2.194v-2.608h2.194v-1.923c0-2.232 1.329-3.447 3.269-3.447.929 0 1.728.071 1.96.103v2.332l-1.345.001c-1.055 0-1.259.514-1.259 1.269z" fill="#000"/><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z" fill="#000"/></svg>'); }
+        background-image: url("../img/_footer/fb_white.svg"); }
     .footer-menu__caption {
       font-family: "Raleway", sans-serif;
       font-size: 12px;
@@ -692,9 +692,9 @@ html, body {
       .footer-menu__social:hover {
         opacity: 0.4; }
       .footer-menu__social--is-instagram {
-        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z"/><path d="m12 5.836c-3.404 0-6.163 2.76-6.163 6.164s2.759 6.163 6.163 6.163 6.164-2.759 6.164-6.163-2.76-6.164-6.164-6.164zm0 10.164c-2.209 0-4-1.791-4-4s1.791-4.001 4-4.001 4.001 1.792 4.001 4.001-1.792 4-4.001 4z"/><circle cx="18.484" cy="5.593" r="1.44"/></g></svg>'); }
+        background-image: url("../img/_footer/instagram_white.svg"); }
       .footer-menu__social--is-fb {
-        background-image: url('data:image/svg+xml;utf-8,<svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.313 8.319v1.665h2.516l-.328 2.608h-2.188v6.691h-2.625v-6.691h-2.194v-2.608h2.194v-1.923c0-2.232 1.329-3.447 3.269-3.447.929 0 1.728.071 1.96.103v2.332l-1.345.001c-1.055 0-1.259.514-1.259 1.269z" fill="#fff"/><path d="m17 24h-10c-3.86 0-7-3.141-7-7v-10c0-3.86 3.14-7 7-7h10c3.859 0 7 3.14 7 7v10c0 3.859-3.141 7-7 7zm-10-22c-2.757 0-5 2.243-5 5v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5v-10c0-2.757-2.243-5-5-5z" fill="#fff"/></svg>'); }
+        background-image: url("../img/_footer/fb_white.svg"); }
 
 .c-article {
   display: -webkit-flex;
