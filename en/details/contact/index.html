@@ -48,7 +48,7 @@
             <strong>GENERAL ENQUIRIES</strong>
           </p>
           <p class="article__text article__text--is-gray">
-            For any general enquiries give us a call, flick us an email or visit us today.
+            For any general enquiries give us a call, send us an email or visit us today.
           </p>
           <p class="article__text">
             <strong>+41 21 320 1041</strong>
@@ -67,12 +67,12 @@
           <p class="article__text">
             A quick message is usually all we need to fix most issues.
           </p>
-          <form class="article__form">
+          <form class="article__form" method="post" action="message.php">
             <input type="text" class="article__input js-input" required placeholder="Name">
             <input type="email" class="article__input js-input" required placeholder="Email">
             <input type="text" class="article__input js-input" required placeholder="Subject">
             <textarea rows="10" class="article__input article__input--is-textarea js-input" required placeholder="Quick message"></textarea>
-            <input type="button" class="article__submit js-button" value="Send">
+            <input type="submit" class="article__submit js-button" value="Send">
             <input type="reset" class="article__reset" value="Cancel">
           </form>
         </article>

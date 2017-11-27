@@ -1,3 +1,4 @@
+/*
 function postStuff(inputs, popup) {
   "use strict";
   // Create our XMLHttpRequest object
@@ -18,7 +19,7 @@ function postStuff(inputs, popup) {
   // Send the data to PHP now... and wait for response to update the status div
   hr.send(vars); // Actually execute the request
 }
-
+*/
 function init() {
   "use strict";
   var inputs = document.getElementsByClassName('js-input'),
@@ -40,6 +41,7 @@ function init() {
       event.target.placeholder = event.target.placeholder.replace('Enter correct ', '');
     });
   });
+  /*
   submit.addEventListener('click', function () {
     var result = [],
       valid = false;
@@ -53,7 +55,7 @@ function init() {
       postStuff(inputs, popup);
     }
   });
- 
+ */
   popup.addEventListener('click', function () {
     if (popup.classList.contains('popup--is-visible')) {
       popup.classList.remove('popup--is-visible');

@@ -249,7 +249,6 @@ html, body {
     font-size: 82px;
     font-weight: 500;
     line-height: 98px;
-    text-transform: uppercase;
     color: #fff;
     max-width: 680px;
     margin-left: -6px; }
@@ -469,13 +468,13 @@ html, body {
       transform: scale(1.05);
       box-shadow: 0 55px 30px -50px rgba(0, 0, 0, 0.5); }
     .programs__link--is-fuse {
-      background-image: url(../img/_programs/fuse_bg.jpg); }
+      background-image: url(../img/_programs/prog_fuse.jpg); }
     .programs__link--is-trx {
       background-image: url(../img/_programs/trx_bg.jpg); }
     .programs__link--is-barre {
-      background-image: url(../img/_programs/barre_bg.jpg); }
+      background-image: url(../img/_programs/prog_barre.jpg); }
     .programs__link--is-yoga {
-      background-image: url(../img/_programs/yoga_bg.jpg); }
+      background-image: url(../img/_programs/prog_yoga.jpg); }
     .programs__link--is-passive:hover {
       transform: none;
       box-shadow: 0 40px 20px -36px rgba(0, 0, 0, 0.8); }

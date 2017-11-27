@@ -64,7 +64,7 @@
   width: 100%;
   &__caption {
     @include raleway(82px, 500, 98px);
-    text-transform: uppercase;
+    //text-transform: uppercase;
     color: #fff;
     max-width: 680px;
     margin-left: -6px;
