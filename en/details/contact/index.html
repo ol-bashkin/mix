@@ -33,7 +33,7 @@
           <li class="menu__item"><a href="../../studios/" class="menu__link">Studios</a></li>
           <li class="menu__item"><a href="../../prices/" class="menu__link">Prices</a></li>
           <li class="menu__item"><a href="../../team/" class="menu__link">Team</a></li>
-          <li class="menu__item"><a href="https://mixstudio.blog/" class="menu__link">blog &ndash; Fuel</a></li>
+          <!--<li class="menu__item"><a href="https://mixstudio.blog/" class="menu__link">blog &ndash; Fuel</a></li>-->
           <!--<li class="menu__item"><a href="../../../fr/details/contact" class="menu__link">Fr</a></li>-->
           <li class="menu__item menu__item--has-no-hover"><a href="https://clients.mindbodyonline.com/classic/ws?studioid=693381&stype=-98" class="menu__button">Login</a></li>
         </ul>
@@ -68,10 +68,10 @@
             A quick message is usually all we need to fix most issues.
           </p>
           <form class="article__form" method="post" action="message.php">
-            <input type="text" class="article__input js-input" required placeholder="Name">
-            <input type="email" class="article__input js-input" required placeholder="Email">
-            <input type="text" class="article__input js-input" required placeholder="Subject">
-            <textarea rows="10" class="article__input article__input--is-textarea js-input" required placeholder="Quick message"></textarea>
+            <input type="text" name="name" class="article__input js-input" required placeholder="Name">
+            <input type="email" name="email" class="article__input js-input" required placeholder="Email">
+            <input type="text" name="subject" class="article__input js-input" required placeholder="Subject">
+            <textarea rows="10" name="message" class="article__input article__input--is-textarea js-input" required placeholder="Quick message"></textarea>
             <input type="submit" class="article__submit js-button" value="Send">
             <input type="reset" class="article__reset" value="Cancel">
           </form>
